@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color by You</title>
+    <link href="https://fonts.googleapis.com/css2?family=Belanosima&family=Catamaran:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="nav-bar">
+        <h1 class="logo">Color by You</h1>
+        <ul class="nav">
+            <li><a href="index.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </header>
+    <br>
+            <h1>Contact us!</h1>
+            <br>
+            <p>Have questions or ready to book your personal color analysis?</p>
+            <p>Reach out to us for appointment availability or any general inquiries.</p>
+            <p>All bookings are personalized and scheduled on a case-by-case basis to ensure a tailored experience just for you.</p>
+    <form action="/" method="post">
+        <fieldset>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name"
+        placeholder="Enter your name" value="" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="user_email"
+        placeholder="email@domain.com" value="" required>
+            <label for="message">Message</label>
+            <textarea id="message" name="message"
+        placeholder="Enter your message." required></textarea>
+        </fieldset>
+
+        <button type="submit">Submit</button>
+    </form>
+    <br>
+    <footer class="site-footer">
+        <p>&copy; 2024 Color by You. All rights reserved.</p>
+    </footer>
+    <script>
+        document.querySelector('form').addEventListener('submit', function(event) {
+            // Prevent the form from submitting traditionally
+            event.preventDefault();
+    
+            // Optional: You could add some validation or show a success message here
+            alert('Thank you for your submission! We will get back to you soon.');
+        });
+    </script>
+</body>
+</html>
